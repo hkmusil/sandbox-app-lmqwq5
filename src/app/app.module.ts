@@ -11,6 +11,7 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faSearch, faUserPlus, faUserMd, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { LeftNavComponent } from './left-nav.component';
 import { HomeComponent } from './home.component';
+import { TestComponent } from './test.component';
 import { BlankComponent } from './blank.component';
 import { SearchComponent } from './search.component';
 import { NotificationsModule } from '../assets/components/notifications';
@@ -23,6 +24,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
   declarations: [
     AppComponent,
     HomeComponent,
+    TestComponent,
     LeftNavComponent,
     SearchComponent,
     BlankComponent
@@ -44,7 +46,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
       { path: 'search', component: SearchComponent },
       { path: 'search/:id', component: SearchComponent },
       { path: 'blank', component: BlankComponent },
-      { path: '**', redirectTo: 'home' }
+      { path: '**', redirectTo: 'home' },
+      { path: 'test', component: TestComponent }
     ])
   ],
   providers: [fakeBackendProvider]

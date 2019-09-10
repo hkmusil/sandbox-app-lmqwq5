@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LeftNavigationService, NavItem, NavHeading, NavItemType } from '../assets/components/left-navigation';
+import { TestComponent } from './test.component';
 
 @Component({
   selector: 'surescripts-root',
